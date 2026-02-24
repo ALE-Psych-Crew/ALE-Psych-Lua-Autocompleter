@@ -1,2 +1,3 @@
-# ALE PSYCH LUA VSCODE AUTOCOMPLETITION
-ale pon algo aca
+# ALE Psych Lua Autocompleter
+
+A small tool to help with the functions of the Lua API from ALE Psych.

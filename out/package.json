@@ -1,8 +1,9 @@
 {
 	"name": "alepsychlua",
-	"displayName": "Ale Psych Lua",
-	"publisher": "aleponalgoaca",
+	"displayName": "Ale Psych Lua Autocompleter",
+	"publisher": "ALEPsychCrew",
 	"version": "0.0.1",
+	"repository": "https://github.com/ALE-Psych-Crew/Ale-Psych-Lua-Autocompleter",
 	"engines": {
 		"vscode": "^1.4.0"
 	},
