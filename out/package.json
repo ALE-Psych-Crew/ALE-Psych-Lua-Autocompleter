@@ -2,7 +2,7 @@
 	"name": "alepluaautocompleter",
 	"displayName": "ALE Psych Lua Autocompleter",
 	"publisher": "ALEPsychCrew",
-	"version": "0.1",
+	"version": "0.1.0",
 	"repository": "https://github.com/ALE-Psych-Crew/ALE-Psych-Lua-Autocompleter",
 	"engines": {
 		"vscode": "^1.4.0"
