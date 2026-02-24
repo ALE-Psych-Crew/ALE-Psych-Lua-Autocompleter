@@ -19,6 +19,11 @@ jobs:
         with:
           haxe-version: 4.3.7
 
+      - name: Install Haxelibs
+        run: |
+          haxelib install hxnodejs 12.2.0
+          haxelib install vscode 1.60.0
+
       - name: Compile HXML
         run: haxe build.hxml
 
