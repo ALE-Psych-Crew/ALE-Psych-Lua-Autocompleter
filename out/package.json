@@ -1,16 +1,14 @@
 {
-	"name": "alepsychlua",
-	"displayName": "Ale Psych Lua Autocompleter",
-	"publisher": "ALEPsychCrew",
-	"version": "0.0.1",
-	"repository": "https://github.com/ALE-Psych-Crew/Ale-Psych-Lua-Autocompleter",
+	"name": "alepsychluaautocompleter",
+	"displayName": "ALE Psych Lua Autocompleter",
+	"publisher": "AlejoGDOfficial",
+	"version": "0.0.3",
+	"repository": "https://github.com/ALE-Psych-Crew/ALE-Psych-Lua-Autocompleter",
 	"engines": {
 		"vscode": "^1.4.0"
 	},
 	"activationEvents": [
-		"onLanguage",
-		"onCommand:alepsychlua.enable",
-		"onCommand:alepsychlua.disable"
+		"onLanguage:lua"
 	],
 	"main": "./extension.js",
 	"extensionDependencies": [
@@ -20,11 +18,11 @@
 		"commands": [
 			{
 				"command": "alepsychlua.enable",
-				"title": "AlePsych: Enable"
+				"title": "ALEPsych: Enable"
 			},
 			{
 				"command": "alepsychlua.disable",
-				"title": "AlePsych: Disable"
+				"title": "ALEPsych: Disable"
 			}
 		]
 	}
