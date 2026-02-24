@@ -43,5 +43,5 @@ jobs:
       - name: Upload VSIX artifact
         uses: actions/upload-artifact@v4
         with:
-          name: extension
+          name: ALE P Lua Extension.zip
           path: out/*.vsix
