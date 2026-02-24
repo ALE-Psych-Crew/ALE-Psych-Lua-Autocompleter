@@ -1,0 +1,6 @@
+-cp src
+-lib vscode
+-js out/extension.js
+-D analyzer-optimize
+-D js-es=6
+Main

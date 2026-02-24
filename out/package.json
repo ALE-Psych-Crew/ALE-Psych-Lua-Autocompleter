@@ -1,0 +1,30 @@
+{
+	"name": "alepsychlua",
+	"displayName": "Ale Psych Lua",
+	"publisher": "aleponalgoaca",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.4.0"
+	},
+	"activationEvents": [
+		"onLanguage",
+		"onCommand:alepsychlua.enable",
+		"onCommand:alepsychlua.disable"
+	],
+	"main": "./extension.js",
+	"extensionDependencies": [
+		"sumneko.lua"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "alepsychlua.enable",
+				"title": "AlePsych: Enable"
+			},
+			{
+				"command": "alepsychlua.disable",
+				"title": "AlePsych: Disable"
+			}
+		]
+	}
+}
