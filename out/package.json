@@ -2,6 +2,11 @@
 	"name": "alepluaautocompleter",
 	"displayName": "ALE Psych Lua Autocompleter",
 	"publisher": "ALEPsychCrew",
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#03071D",
+		"theme": "dark"
+	},
 	"version": "0.1.0",
 	"repository": "https://github.com/ALE-Psych-Crew/ALE-Psych-Lua-Autocompleter",
 	"engines": {
