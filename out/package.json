@@ -7,7 +7,7 @@
 		"color": "#03071D",
 		"theme": "dark"
 	},
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"repository": "https://github.com/ALE-Psych-Crew/ALE-Psych-Lua-Autocompleter",
 	"engines": {
 		"vscode": "^1.4.0"
