@@ -211,9 +211,9 @@ class extension_auto_Generator {
 			while(_g < _g1.length) {
 				let arg = _g1[_g];
 				++_g;
-				let prefix = arg.optional ? "?" : "";
+				let postfix = arg.optional ? "?" : "";
 				let argType = extension_auto_Generator.resolveType(arg);
-				let x = "---@param " + prefix + StringTools.replace(arg.name,"?","") + " " + argType + "\n";
+				let x = "---@param " + StringTools.replace(arg.name,"?","") + " " + argType + postfix + "\n";
 				buf.b += Std.string(x);
 			}
 			if(f.name == "new") {
@@ -226,14 +226,9 @@ class extension_auto_Generator {
 			let _this = func.args;
 			let _g_current = 0;
 			while(_g_current < _this.length) {
-				let _g_value = _this[_g_current];
-				let _g_key = _g_current++;
-				if(_g_value.optional) {
-					buf.b += "?";
-				}
-				let x = StringTools.replace(_g_value.name,"?","");
+				let x = StringTools.replace(_this[_g_current++].name,"?","");
 				buf.b += Std.string(x);
-				if(_g_key != func.args.length - 1) {
+				if(_g_current - 1 != func.args.length - 1) {
 					buf.b += ", ";
 				}
 			}

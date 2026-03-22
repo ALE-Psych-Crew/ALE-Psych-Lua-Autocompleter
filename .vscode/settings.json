@@ -1,5 +1,6 @@
 {
     "Lua.workspace.library": [
-        "/home/jonk/.vscode/extensions/alepsychcrew.alepluaautocompleter-0.1.1/lua_definitions"
+        "/home/jonk/.vscode/extensions/alepsychcrew.alepluaautocompleter-0.1.1/lua_definitions",
+        "/tmp/ale-autocompletition/flixel.FlxSprite"
     ]
 }

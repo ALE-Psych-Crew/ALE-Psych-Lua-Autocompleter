@@ -79,7 +79,7 @@ typedef TypeRefFunction = {
 typedef FuncArg = {
 	name:String,
 	optional:Bool,
-	type:TypeRef
+	type:String
 }
 
 typedef TypeRefAnon = {

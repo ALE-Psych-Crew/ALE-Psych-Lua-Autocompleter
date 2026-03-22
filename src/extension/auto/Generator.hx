@@ -88,9 +88,9 @@ class Generator {
 			final func:TypeRefFunction = (cast f.type : TypeRefFunction);
 
 			for (arg in func.args) {
-				final prefix:String = arg.optional ? "?" : "";
+				final postfix:String = arg.optional ? "?" : "";
 				final argType:String = resolveType(arg);
-				buf.add('---@param $prefix${arg.name.replace("?", "")} $argType\n');
+				buf.add('---@param ${arg.name.replace("?", "")} $argType$postfix\n');
 			}
 
 			if (f.name == "new") {
@@ -102,8 +102,6 @@ class Generator {
 			buf.add(isStatic ? 'function $name.${f.name}(' : 'function $name:${f.name}(');
 
 			for (i => arg in func.args) {
-				if (arg.optional)
-					buf.add("?");
 				buf.add(arg.name.replace("?", ""));
 				if (i != func.args.length - 1)
 					buf.add(", ");
@@ -143,7 +141,7 @@ class Generator {
 			return fallback;
 
 		if (Std.isOfType(t, String))
-			return haxeTypeToLua((cast t : String));
+			return haxeTypeToLua(t);
 
 		final k:String = t.kind;
 
